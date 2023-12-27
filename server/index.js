@@ -9,7 +9,7 @@ const DB_URL = 'mongodb+srv://rugvedwagh02:rugved76@demo2decrecipe.obznib4.mongo
 
 app.use(express.json());
 
-const CLIENT_URL = 'https://recipeserver-odjx.onrender.com'
+const CLIENT_URL = 'https://blogmernfront.onrender.com/auth'
 app.use(cors({ credentials: true, origin: CLIENT_URL }));
 app.use("/auth", userRouter);
 app.use("/recipes", recipesRouter);
